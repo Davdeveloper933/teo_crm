@@ -13,20 +13,20 @@
     @dragend.stop="$emit('internal:dragend', $event)"
   >
     <div v-if="draggable" class="Layout_Cell__actions">
-      <span
-        v-if="$parent.$options.name !== 'Layout'"
-        class="Layout_Cell__edit"
-        @click="$emit('edit:content')"
-        ><font-awesome-icon icon="edit"
-      /></span>
-      <span
-        v-if="
-          $parent.$options.name !== 'Layout' || !$parent.config.children.length
-        "
-        class="Layout_Cell__delete"
-        @click="$emit('delete:content')"
-        ><font-awesome-icon icon="trash"
-      /></span>
+<!--      <span-->
+<!--        v-if="$parent.$options.name !== 'Layout'"-->
+<!--        class="Layout_Cell__edit"-->
+<!--        @click="$emit('edit:content')"-->
+<!--        ><font-awesome-icon icon="edit"-->
+<!--      /></span>-->
+<!--      <span-->
+<!--        v-if="-->
+<!--          $parent.$options.name !== 'Layout' || !$parent.config.children.length-->
+<!--        "-->
+<!--        class="Layout_Cell__delete"-->
+<!--        @click="$emit('delete:content')"-->
+<!--        ><font-awesome-icon icon="trash"-->
+<!--      /></span>-->
     </div>
     <!-- <span class="Layout_Cell__id" v-if="draggable">{{id}}</span> -->
     <slot />
@@ -491,7 +491,7 @@ export default {
 
 .Layout_Cell--hovered {
   cursor: grab;
-  background: #03a696;
+  background: unset !important;
   opacity: 0.4;
 }
 
@@ -512,7 +512,7 @@ export default {
 
 .Layout_Cell--placeholder {
   opacity: 1;
-  background: #03a696;
+  /*background: #03a696;*/
   color: #fff;
   min-height: 50px;
 }

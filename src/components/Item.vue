@@ -5,9 +5,21 @@
       :draggable="editable"
       @delete:content="$emit('delete:content')"
   >
-    <div class="Item" :style="style" @click="onClick">
-      {{ content }}
-    </div>
+<!--    <div class="Item" :style="style" @click="onClick">-->
+<!--      {{ content }}-->
+<!--    </div>-->
+    <v-row
+        class="fields__item align-center white--text mx-0 mt-0"
+        @click="onClick"
+    >
+      <div>
+        <img :src="require(`@/assets/img/icons/list.svg`)" alt="">
+      </div>
+      <h3 class="fields__item__value">
+        Наименование
+        <span class="fields__item__translation">(Name)</span>
+      </h3>
+    </v-row>
   </cell>
 </template>
 

@@ -20,48 +20,15 @@
             "content": "This"
           },
           "hello": "world"
-        },
-        {
-          "component": "Item",
-          "display": {
-            "weight": 2
-          },
-          "props": {
-            "background": "#E6E7E8",
-            "content": "is"
-          },
-          "hello": "world"
-        },
-        {
-          "component": "Layout",
-          "props": {
-            "orientation": "vertical"
-          },
-          "children": [
-            {
-              "component": "Item",
-              "display": {
-                "weight": 1
-              },
-              "props": {
-                "background": "#E6E7E8",
-                "content": "and"
-              },
-              "hello": "world"
-            },
-            {
-              "component": "Item",
-              "display": {
-                "weight": 1
-              },
-              "props": {
-                "background": "#E6E7E8",
-                "content": "vertical."
-              },
-              "hello": "world"
-            }
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "component": "Layout",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": [
         {
           "component": "Item",
           "display": {
@@ -69,30 +36,11 @@
           },
           "props": {
             "background": "#E6E7E8",
-            "content": "horizontal."
+            "content": "This"
           },
           "hello": "world"
         }
       ]
-    },
-    {
-      "component": "Item",
-      "props": {
-        "background": "#E6E7E8",
-        "content": "This"
-      },
-      "hello": "world"
-    },
-    {
-      "component": "Item",
-      "display": {
-        "weight": 1
-      },
-      "props": {
-        "background": "#E6E7E8",
-        "content": "horizontal."
-      },
-      "hello": "world"
     },
     {
       "component": "Layout",
@@ -125,20 +73,45 @@
       ]
     },
     {
-      "component": "Item",
+      "component": "Layout",
       "props": {
-        "background": "#E6E7E8",
-        "content": "is"
+        "orientation": "horizontal"
       },
-      "hello": "world"
-    },
-    {
-      "component": "Item",
-      "props": {
-        "background": "#E6E7E8",
-        "content": "vertical."
-      },
-      "hello": "world"
+      "children": [
+        {
+          "component": "Item",
+          "display": {
+            "weight": 1
+          },
+          "props": {
+            "background": "#E6E7E8",
+            "content": "This"
+          },
+          "hello": "world"
+        },
+        {
+          "component": "Item",
+          "display": {
+            "weight": 1
+          },
+          "props": {
+            "background": "#E6E7E8",
+            "content": "is"
+          },
+          "hello": "world"
+        },
+        {
+          "component": "Item",
+          "display": {
+            "weight": 1
+          },
+          "props": {
+            "background": "#E6E7E8",
+            "content": "is"
+          },
+          "hello": "world"
+        }
+      ]
     }
   ]
 }

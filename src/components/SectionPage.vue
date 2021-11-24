@@ -75,7 +75,6 @@
       </v-btn>
     </v-row>
     <Sections/>
-    <LayoutTest v-show="false"/>
   </v-col>
   </v-row>
   </v-container>
@@ -85,10 +84,9 @@
 import EyeSVG from "./SVG/EyeSVG";
 import Sections from "./Sections";
 import { mapMutations } from 'vuex'
-import LayoutTest from "./VueLayoutTest";
 export default {
   name: "SectionPage",
-  components: {LayoutTest, Sections, EyeSVG},
+  components: { Sections, EyeSVG},
   data () {
     return {
       title:null,

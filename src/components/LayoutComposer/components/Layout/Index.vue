@@ -18,7 +18,7 @@
         @mouseenter.stop="moveHovered = true"
         @mouseleave.stop="moveHovered = false"
       >
-        <font-awesome-icon icon="arrows-alt" />
+<!--        <font-awesome-icon icon="arrows-alt" />-->
         <span v-if="moveHovered">Move Layout</span>
       </div>
 
@@ -156,12 +156,12 @@ export default {
 }
 
 .Layout--move-hovered {
-  background: #03a696;
+  /*background: #03a696;*/
   cursor: grab;
 }
 
 .Layout .Layout--move-hovered > .Layout__move {
-  color: #284664;
+  /*color: #284664;*/
 }
 
 .Layout .Layout__move {
