@@ -1,53 +1,32 @@
 <template>
-  <v-container
-      class="section__container"
-  >
-  <row
-      justify="center"
-  >
-  <v-col
-      cols="12"
-      class="section"
-  >
-    <v-row class="section__top-buttons d-flex align-center">
-      <v-btn
-          class="white--text add-button"
-          color="#3C3F4F"
-          elevation="0"
-      >
-        Добавить раздел
-        <v-icon
-            class="add-button__icon"
-        >
-          mdi-plus
-        </v-icon>
-      </v-btn>
-      <v-btn
-          class="white--text generate-button"
-          color="#FEAC0D"
-          elevation="0"
-      >
-        Сгенерировать
-      </v-btn>
-      <v-btn
-          class="eye-button"
-          color="#3C3F4F"
-          elevation="0"
-          min-width="40"
-      >
-        <EyeSVG/>
-      </v-btn>
-    </v-row>
-  </v-col>
-  </row>
-  </v-container>
+  <v-row class="sections d-block mt-9">
+    <h2
+        class="sections__title"
+        v-if="items.length"
+    >
+      Разделы
+    </h2>
+    <v-row class="ma-0 justify-space-between d-flex">
+        <SectionsItems v-if="items.length" :items="items"></SectionsItems>
+<!--      <v-spacer></v-spacer>-->
+        <Fields/>
+      </v-row>
+    <Table/>
+  </v-row>
 </template>
 
 <script>
-import EyeSVG from "./SVG/EyeSVG";
+import SectionsItems from "./Sections/Items";
+import Fields from "./Sections/Fields";
+import Table from "./Sections/Table";
 export default {
   name: "Sections",
-  components: {EyeSVG}
+  components: {Table, Fields, SectionsItems},
+  computed: {
+    items () {
+      return this.$store.state.items
+    }
+  }
 }
 </script>
 

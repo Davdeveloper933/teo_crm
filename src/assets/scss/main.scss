@@ -12,7 +12,7 @@
   .section {
     background: #232532;
     border-radius: 3px;
-    padding: 30px 0 0 26px;
+    padding: 30px 30px 30px 30px;
     &__top-buttons {
       .v-btn {
         font-weight: 600;
@@ -38,7 +38,43 @@
     }
   }
 
+  .sections {
+    &__title {
+      font-weight: 600;
+      font-size: 30px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+  }
 
+  .items {
+    width: 321px;
+    max-width: 321px;
+    &__group {
+      background: #3C3F4F;
+      border-radius: 3px;
+      &.v-list-group {
+        &:not(last-child) {
+          margin-bottom: 10px;
+        }
+        .v-icon {
+          color: white;
+        }
+        &:hover {
+          background: #FEAC0D;
+        }
+      }
+      .v-list-item {
+        border-radius: 3px;
+      }
+      .v-list-item__content {
+        color: white;
+      }
+      .v-list-group__header__append-icon {
+        display: none;
+      }
+    }
+  }
 
 .container.section__container {
   padding: 12px 0;
@@ -47,6 +83,84 @@
 
 .v-btn__content {
   text-transform: none !important;
+}
+
+.table {
+  margin-top: 150px;
+  tr,th {
+    background: #3C3F4F;
+  }
+  th {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+  &__td {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+}
+
+.icon-btn {
+  padding: 0;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.icons__wrapper {
+  position: absolute;
+  right: -190px;
+  top: 82px;
+}
+
+.bg-active {
+  background-color: #FEAC0D;
+  color: white !important;
+}
+
+.fields {
+  background: #3C3F4F;
+  border-radius: 3px;
+  padding: 10px;
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 12px;
+  }
+  &__btn {
+    height: 30px !important;
+    margin-right: 10px;
+  }
+  &__translation {
+    margin-left: 6px;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__item {
+    background: #232532;
+    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 8px;
+    &__value {
+      margin-left: 21px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    &__translation {
+      font-weight: normal;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-left: 10px;
+    }
+  }
+}
+
+.fields {
+  max-width: 1008px;
 }
 
 @media (min-width: 1904px) {
