@@ -12,6 +12,7 @@
     "@mdi/js": "^6.5.95",
     "@mdi/svg": "^6.5.95",
     "core-js": "^3.19.1",
+
     "vue": "^2.6.11",
     "vue-layout-composer": "^0.1.5",
     "vue-router": "^3.2.0",

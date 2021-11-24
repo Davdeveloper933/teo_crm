@@ -13,7 +13,7 @@
     @dragend.stop="$emit('internal:dragend', $event)"
   >
     <div v-if="draggable" class="Layout_Cell__actions">
-<!--      <span-->
+<!--     <span-->
 <!--        v-if="$parent.$options.name !== 'Layout'"-->
 <!--        class="Layout_Cell__edit"-->
 <!--        @click="$emit('edit:content')"-->
