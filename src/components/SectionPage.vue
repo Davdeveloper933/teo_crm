@@ -75,7 +75,7 @@
       </v-btn>
     </v-row>
     <Sections/>
-    <LayoutTest/>
+    <LayoutTest v-show="false"/>
   </v-col>
   </v-row>
   </v-container>
